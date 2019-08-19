@@ -1,4 +1,4 @@
-#	[每日一题]  Two Sum
+#	DailyQuestion: Two Sum
 
 
 
