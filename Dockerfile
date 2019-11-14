@@ -21,7 +21,7 @@ COPY install.sh  /install.sh
 RUN chmod +x /install.sh
 ENTRYPOINT [ "/install.sh" ]
 
-EXPOSE 9090
+#EXPOSE 4000
 
 CMD [ "init" ]
 
