@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 
 #if [ "$1" = 'init'  ]; then
@@ -6,7 +6,7 @@
     #hexo init
     #npm install 
 if [ "$1" = 'bash'  ]; then
-    /bin/bash
+    /bin/sh
 elif [ "$1" = 'update' ]; then
     cd /opt/blog
     npm install hexo-generator-sitemap --save
