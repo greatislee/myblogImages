@@ -16,8 +16,8 @@ RUN \
     git clone https://github.com/greatislee/myblogImages.git && \
     cp myblogImages/bakmk/*  /opt/blog/source/_posts/ && \
     rm /opt/blog/source/_posts/hello-world.md && \
-    mkdir -p /opt/blog/source/_posts/about && \
-    mv /opt/blog/source/_posts/index.md /opt/blog/source/_posts/about && \
+    mkdir -p /opt/blog/source/about && \
+    mv /opt/blog/source/_posts/index.md /opt/blog/source/about && \
     cd /opt/blog/themes && \
     git clone https://github.com/geekplux/hexo-theme-typing.git
 
