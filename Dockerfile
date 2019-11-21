@@ -4,15 +4,13 @@ MAINTAINER  icefrogisgreat@gmail.com
 
 
 RUN \ 
-    mkdir -p /opt/blog  && \
-    cd /opt/blog    && \
-    #apt-get update  && \
-    #apt-get install -y nodejs npm && \
-    #apt-get install -y git && \
-    #npm config set registry https://registry.npm.taobao.org  && \
     apk add --update --no-cache git openssh && \
     npm install hexo-cli -g && \
-    hexo init  && \
+    hexo init  /opt/blog && \
+    cd /opt/blog && \
+    hexo install && \
+    npm install hexo-generator-sitemap --save && \
+    npm install hexo-deployer-git --save && \
     git clone https://github.com/greatislee/myblogImages.git && \
     cp myblogImages/bakmk/*  /opt/blog/source/_posts/ && \
     rm /opt/blog/source/_posts/hello-world.md && \
@@ -26,21 +24,16 @@ WORKDIR /opt/blog
 VOLUME ["/opt/blog"]
 
 COPY ./dockerfile/install.sh  /install.sh
+COPY ./dockerfile/CNAME  /opt/blog/source/
 COPY ./dockerfile/_config.yml_hexo  /opt/blog/_config.yml
 COPY ./dockerfile/_config.yml_themes /opt/blog/themes/hexo-theme-typing/_config.yml
 COPY ./dockerfile/favicon.ico  /opt/blog/themes/hexo-theme-typing/source/images
 
-#RUN \ 
-#    cd /opt/blog/ && \
-#    rm _config.yml && \
-#    mv _config.yml_hexo _config.yml && \
-#    cd themes/  && \
-#    mv _config.yml_themes _config.yml
 
 RUN chmod +x /install.sh
 ENTRYPOINT [ "/install.sh" ]
 
 #EXPOSE 4000
 
-CMD ['init']
+#CMD ['deploy']
 
