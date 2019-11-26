@@ -12,18 +12,16 @@ categories: Note
 #define _AUTO_RELEASE_H_
 
 template<typename Type>
-class CAutoRelease
-{
+class CAutoRelease {
+public:
 	typedef void (Type::*PtrFun)(void);
 public:
 	CAutoRelease(Type* pClass,PtrFun ptrFun)
 		:m_pClass(pClass)
-		,m_ptrFun(ptrFun)
-	{
+		,m_ptrFun(ptrFun) {
 	}
 
-	~CAutoRelease()
-	{
+	~CAutoRelease() {
 		(m_pClass->*m_ptrFun)();
 	}
 
