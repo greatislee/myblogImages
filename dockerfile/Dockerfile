@@ -23,11 +23,11 @@ RUN \
 WORKDIR /opt/blog
 VOLUME ["/opt/blog"]
 
-COPY ./dockerfile/install.sh  /install.sh
-COPY ./dockerfile/CNAME  /opt/blog/source/
-COPY ./dockerfile/_config.yml_hexo  /opt/blog/_config.yml
-COPY ./dockerfile/_config.yml_themes /opt/blog/themes/hexo-theme-typing/_config.yml
-COPY ./dockerfile/favicon.ico  /opt/blog/themes/hexo-theme-typing/source/images
+COPY ./install.sh  /install.sh
+COPY ./CNAME  /opt/blog/source/
+COPY ./_config.yml_hexo  /opt/blog/_config.yml
+COPY ./_config.yml_themes /opt/blog/themes/hexo-theme-typing/_config.yml
+COPY ./favicon.ico  /opt/blog/themes/hexo-theme-typing/source/images
 
 
 RUN chmod +x /install.sh
