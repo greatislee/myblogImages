@@ -1,6 +1,7 @@
 ---
 title: DailyQuestion Two Sum
 date: 2019-08-20 11:29:12
+categories: Blog
 ---
 
 >	Given an array of integers, return indices of the two numbers such that they add up to a specific target.

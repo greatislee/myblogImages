@@ -4,8 +4,8 @@ dark: false
 # Header
 menu:
   Home: /
-  Archives: /archives
-  About: /about/
+  Archives: /categories/Blog
+  About: /categories/Note
 
 # Your Feed Location
 #rss: /atom.xml
@@ -37,7 +37,7 @@ icons: false
 # If "icons: true" link names will interpreted as fontawesome icon names
 # NOTICE) Use the fontawesome icon names without the fa- prefix (http://fontawesome.io/cheatsheet/)
 links:
-  Blog: /archives/
+  Blog: /categories/Blog
   Twitter: https://twitter.com/returncpp
   About: /about
 

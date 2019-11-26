@@ -1,6 +1,7 @@
 ---
 title: 教你如何使用高效的shadowsocks-libev
 date: 2017-09-22 14:49:13
+categories: Blog
 ---
 
 由于工作中时常出现问题,需要使用检索网站搜索解决方案,众所周知baidu的结果集有点弱;

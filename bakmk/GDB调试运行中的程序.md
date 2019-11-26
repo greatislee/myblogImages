@@ -1,6 +1,7 @@
 ---
 title: GDB调试运行中的程序 
 date: 2017-11-11 09:02:11
+categories: Blog
 ---
 工作中大家避免不了Debug,那么在复杂的业务逻辑中,海量的数据处理中,数不清的for循环中,怎么定位Bug呢?
 推荐给大家一个工具 [gdb](http://www.gnu.org/software/gdb/)
