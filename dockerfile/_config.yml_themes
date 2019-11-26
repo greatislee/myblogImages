@@ -4,8 +4,9 @@ dark: false
 # Header
 menu:
   Home: /
-  Archives: /categories/Blog
-  About: /categories/Note
+  Blog: /categories/Blog
+  Note: /categories/Note
+  About: /about
 
 # Your Feed Location
 #rss: /atom.xml
