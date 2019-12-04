@@ -12,7 +12,7 @@ RUN \
     npm install hexo-generator-sitemap --save && \
     npm install hexo-deployer-git --save && \
     git clone https://github.com/greatislee/myblogImages.git && \
-    cp myblogImages/bakmk/*  /opt/blog/source/_posts/ && \
+    cp myblogImages/bakmk/*.md  /opt/blog/source/_posts/ && \
     rm /opt/blog/source/_posts/hello-world.md && \
     mkdir -p /opt/blog/source/about && \
     mv /opt/blog/source/_posts/index.md /opt/blog/source/about && \
