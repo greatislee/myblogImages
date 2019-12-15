@@ -10,3 +10,4 @@ categories: Note
 	#也可以使用相对路径,解包后是相对路径
 	tar zcvf data.tar.gz /data/ --exclude=/data/inc   
 ```
+
