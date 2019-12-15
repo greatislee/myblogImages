@@ -1,6 +1,6 @@
 ---
 title: Linux打包时跳过某个目录或文件
-date: 2017--07-12 22:56:43
+date: 2017-07-12 22:56:43
 categories: Note
 ---
 >	linux在使用tar命令的时候可以加exclude参数来指定不打包哪个目录或者文件
